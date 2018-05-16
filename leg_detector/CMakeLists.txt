@@ -13,6 +13,9 @@ pkg_check_modules(BULLET bullet)
 include_directories(${BULLET_INCLUDE_DIRS})
 
 ## Find catkin macros and libraries
+
+find_package(OpenCV REQUIRED)
+
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
